@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    {% for i in posts %}
+    <a href="{% url 'detail' i.id %}"> <h1>{{i.title}}</h2> </a>
+    <img class="img" src="{{i.image.url}}" alt="">
+    <p>{{i.pub_date}}</p>
+    <p>Category-{{i.category}}</p>
+    <p>{{i.news}}</h4>
+    {% endfor %}
+</body>
+</html>

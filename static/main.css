@@ -1,0 +1,14 @@
+body {
+    text-decoration: none;
+    background-image: linear-gradient(to right,#E9A5F1,#4F1C51);
+    box-shadow: 0 4px 10px black;
+}
+
+.img {
+    width: 40%;
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
+}
